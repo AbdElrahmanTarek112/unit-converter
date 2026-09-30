@@ -1,0 +1,41 @@
+/* Target the body to set the default font */
+body {
+  font-family: 'Nunito', 'Varela Round', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+}
+
+/* Explicitly target the h5 to override Bootstrap's heading styles */
+h5 {
+  font-family: 'Nunito', 'Varela Round', sans-serif;
+  font-weight: 800;
+}
+a{
+    text-decoration: none;
+    padding:10px 0px;
+}
+.btn{
+  padding: 5px 30px;
+  border: solid 2px !important;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.box{
+  padding: 5px 30px;
+  border: solid 2px !important;
+  border-radius: 5px;
+}
+nav{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.active-link{
+  text-decoration: underline;
+  color:rgba(13, 110, 253, 1);
+}
+.nav-item {
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
