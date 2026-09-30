@@ -4,6 +4,8 @@ A simple, lightweight web app for converting between common units of **length**,
 
 **Repository:** https://github.com/AbdElrahmanTarek112/unit-converter
 
+This project is a solution to the [Unit Converter](https://roadmap.sh/projects/unit-converter) project challenge from [roadmap.sh](https://roadmap.sh).
+
 ---
 
 ## Features
@@ -95,5 +97,5 @@ Contributions, issues, and feature requests are welcome. Feel free to open an is
 
 ## Author
 
-**AbdElrahman Tarek**
+**Abdelrahman Tarek Faty**
 GitHub: [@AbdElrahmanTarek112](https://github.com/AbdElrahmanTarek112)
