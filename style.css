@@ -4,8 +4,14 @@ body {
   font-weight: 800;
   text-decoration: none;
   color: black;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
-
+form.container {
+  width: auto;
+  max-width: 400px;
+}
 /* Explicitly target the h5 to override Bootstrap's heading styles */
 h5 {
   font-family: 'Nunito', 'Varela Round', sans-serif;
@@ -22,13 +28,17 @@ a{
   margin-bottom: 5px;
 }
 .box{
-  padding: 5px 30px;
+  padding: 10px 50px;
   border: solid 2px !important;
   border-radius: 5px;
+  box-shadow:
+    4px 4px 0 rgba(0, 0, 0, 1),        /* the hard shadow you have now */
+    8px 8px 20px rgba(0, 0, 0, 0.25);
 }
 nav{
   margin-top: 10px;
   margin-bottom: 10px;
+  justify-content: space-evenly;
 }
 .active-link{
   text-decoration: underline;
@@ -38,4 +48,7 @@ nav{
   cursor: pointer;
   padding-top: 5px;
   padding-bottom: 20px;
+}
+h1 {
+  white-space: nowrap;
 }

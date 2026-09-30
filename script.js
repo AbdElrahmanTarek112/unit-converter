@@ -97,6 +97,7 @@ function convert() {
   unitfrom = document.getElementById("from-list").value;
   unitto = document.getElementById("to-list").value;
   num = parseFloat(document.getElementById("number").value);
+  if (Number.isNaN(num)) return;
   let result;
   if (unitfrom in lengthFactors) {
     result = num * (lengthFactors[unitfrom] / lengthFactors[unitto]);
