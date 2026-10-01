@@ -21,22 +21,25 @@
       <fieldset class="box justify-content-center gap-3">
         <h2 class="text-center">Unit Converter</h2>
         <nav class="nav gap-3" id="nav">
-          <div class="nav-item active-link" onclick="length(this)" id="length">
-            Length
-          </div>
+          <div class="nav-item" onclick="length(this)" id="length">Length</div>
           <div class="nav-item" onclick="Weight(this)" id="weight">Weight</div>
           <div class="nav-item" onclick="Temperature(this)" id="temperature">
             Temperature
           </div>
         </nav>
-        <section class="d-flex flex-column gap-3">
+        <section class="form-section d-flex flex-column gap-3">
           <label for="unit" id="unit">Enter the length to convert</label>
           <input type="number" class="unit" id="number" required />
           <label for="from" id="from">Unit to convert from</label>
           <select name="from" id="from-list"></select>
           <label for="to" id="to">Unit to convert to</label>
           <select name="to" id="to-list"></select>
-          <button class="btn" onclick="convert()">Convert</button>
+          <button type="button" class="btn" onclick="convert()">Convert</button>
+        </section>
+        <section class="result-section d-flex flex-column gap-3 d-none">
+          <h5>Result of your calculation</h5>
+          <p id="result"></p>
+          <button type="button" class="btn" onclick="resetForm()">Reset</button>
         </section>
       </fieldset>
     </form>

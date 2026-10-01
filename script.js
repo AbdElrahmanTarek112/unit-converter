@@ -79,6 +79,9 @@ function Temperature(element) {
   else if (unit == "fahrenheit") input.min = -459.67;
   else input.min = 0;
 }
+window.onload = function () {
+  length(document.getElementById("length"));
+};
 const lengthFactors = {
   meters: 1,
   feet: 0.3048,
@@ -114,5 +117,13 @@ function convert() {
     else if (unitfrom === "fahrenheit") result = (celsius * 9) / 5 + 32;
     else result = celsius + 273.15; // kelvin
   }
-  alert(result);
+  document.getElementById("result").textContent =
+    `${num} ${unitfrom} = ${result} ${unitto}`;
+  document.querySelector(".result-section").classList.remove("d-none");
+  document.querySelector(".form-section").classList.add("d-none");
+}
+function resetForm() {
+  document.querySelector(".result-section").classList.add("d-none");
+  document.querySelector(".form-section").classList.remove("d-none");
+  document.getElementById("number").value = "";
 }
